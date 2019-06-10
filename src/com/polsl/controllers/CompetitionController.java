@@ -16,7 +16,7 @@ public class CompetitionController {
     @GET
     public Competition getCompetition(int ID) {
         for (Competition c: competitions) {
-            if(c.ID==ID)return c;
+            if(c.getID()==ID)return c;
         }
         return null;
     }

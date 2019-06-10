@@ -15,7 +15,7 @@ public class RunsController {
     @GET
     public Runs getRun(int ID) {
         for (Runs r: runs) {
-            if(r.ID==ID)return r;
+            if(r.getID()==ID)return r;
         }
         return null;
     }

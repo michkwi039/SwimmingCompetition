@@ -15,7 +15,7 @@ public class ScoresController {
     @GET
     public Scores getScore(int ID) {
         for (Scores s: scores) {
-            if(s.ID==ID)return s;
+            if(s.getID()==ID)return s;
         }
         return null;
     }
